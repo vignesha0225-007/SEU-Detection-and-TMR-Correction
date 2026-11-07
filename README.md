@@ -107,7 +107,7 @@ EDA Playground project: https://edaplayground.com/x/rYD_
 
 ## Author
 
-**Sai Harinarayanan J**  
+**Vignesh A**  
 Electronics and Communication Engineering
 
 ---
