@@ -1,5 +1,5 @@
-# SEU-Detection-and-TMR-Correction
-RTL Design and Verification of SEU-Tolerant Register System Using TMR
-## Simulation Results
+## Author
 
-![Simulation Waveform](eda_playground_console.png)
+**Vignesh A.**
+
+Electronics and Communication Engineering
