@@ -1,0 +1,47 @@
+SEU Detection and TMR Recovery — Simulation Results
+====================================================
+
+Simulation platform: EDA Playground
+Simulator shown in the run log: Siemens Questa Sim-64, 2025.2
+Run date shown in the console: 06 November 2026
+Testbench top module: tb
+
+Test data
+---------
+data_in = 8'b10110110
+
+Fault-injection scenarios
+-------------------------
+1. R1, bit 2
+   R1 FAULT:     error=1
+   R1 RECOVERY:  error=0 output=10110110
+
+2. R2, bit 5
+   R2 FAULT:     error=1
+   R2 RECOVERY:  error=0 output=10110110
+
+3. R3, bit 0
+   R3 FAULT:     error=1
+   R3 RECOVERY:  error=0 output=10110110
+
+Simulation summary
+------------------
+The testbench reached $finish normally at 91 ns.
+The simulator reports zero errors. The final summary reports one warning in
+the vopt optimization stage; qrun, vlog, and vsim each report zero warnings.
+
+Conclusion
+----------
+All three tested single-register, single-bit fault-injection cases asserted the
+error signal and recovered to the original 8-bit output, 10110110.
+
+Evidence
+--------
+See ../Images/eda_playground_console.png for the EDA Playground console capture.
+See ../Images/tmr_waveform.png for the EPWave timing waveform.
+
+Scope
+-----
+These results demonstrate the three scenarios exercised by this testbench. They
+do not establish tolerance to simultaneous faults in multiple registers or
+physical radiation-hardness.
